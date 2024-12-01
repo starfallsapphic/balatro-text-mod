@@ -10,6 +10,6 @@ this mod requires both [steamodded](https://github.com/Steamopollys/Steamodded/t
 - instructions for installing steamodded can be found [here](https://github.com/Steamopollys/Steamodded/wiki/01.-Getting-started)
 
 ## installation
-- once you have installed the dependencies, install the latest release of this mod.
-- extract the archive and drag the folder into your %appdata%/Roaming/Balatro/Mods folder.
+- once you have installed the dependencies, install the [latest release](https://github.com/starfallsapphic/balatro-text-mod/releases/tag/v0.1-i-guess) of this mod.
+- extract the archive and drag the folder into your %APPDATA%/Balatro/Mods folder.
 - open the game and verify that a "MODS" button appears and that "starfallsapphic's text replacement mod" appears on the list.
