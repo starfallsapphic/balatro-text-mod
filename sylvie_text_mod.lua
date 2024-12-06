@@ -30,18 +30,22 @@ function SMODS.INIT.sylvie_text_mod()
         G.localization.misc.dictionary["b_skip_blind"] = "no!!!!!!!!!"
         G.localization.misc.dictionary["b_play_hand"] = "send it"
         G.localization.misc.dictionary["b_discard"] = "nuh uh"
-        G.localization.misc.dictionary["b_cash_out"] = "yyyeahhgfh"
+        G.localization.misc.dictionary["b_cash_out"] = "big Winner!"
         G.localization.misc.dictionary["b_sort_hand"] = "the sorterrr"
 
         G.localization.misc.dictionary["k_reroll"] = "these suck"
         G.localization.misc.dictionary["k_rank"] = "rank"
         G.localization.misc.dictionary["k_suit"] = "flush"
+        G.localization.misc.dictionary["k_aces"] = "Asexuals"
         G.localization.misc.dictionary["k_eaten_ex"] = "i eated it :("
         G.localization.misc.dictionary["k_again_ex"] = "run it back"
         G.localization.misc.dictionary["k_copied_ex"] = "two"
         G.localization.misc.dictionary["k_disabled_ex"] = "nah"
         G.localization.misc.dictionary["k_extinct_ex"] = "nomnomnom"
-        G.localization.misc.dictionary["k_aces"] = "Asexuals"
+        G.localization.misc.dictionary["k_drank_ex"] = "biiiig sip"
+        G.localization.misc.dictionary["k_nope_ex"] = "NO!!!!!!!!!!!!!!!!!!"
+
+
 
 
         G.localization.misc.quips.lq_1 = {"girl........"}
@@ -67,7 +71,7 @@ function SMODS.INIT.sylvie_text_mod()
         G.localization.misc.quips.lq_10 = {"why did you", "lose? are", "you stupid?"}
 
         G.localization.misc.quips.wq_1 = {"we're so", "fucking back"}
-        G.localization.misc.quips.wq_2 = {":3"}
+        G.localization.misc.quips.wq_2 = {":3c"}
         G.localization.misc.quips.wq_3 = {"HOLYYYYY"}
         G.localization.misc.quips.wq_4 = {"i'm so proud", "of you <3"}
         G.localization.misc.quips.wq_5 = {"what are we,", "some kind of", "Balatro?"}
@@ -82,13 +86,13 @@ function SMODS.INIT.sylvie_text_mod()
 
     -- modify poker hand text
     if G and G.localization and G.localization.misc and G.localization.misc.poker_hands then
-        G.localization.misc.poker_hands["Flush Five"] = "you win"
+        G.localization.misc.poker_hands["Flush Five"] = "flushed away (2006)"
         G.localization.misc.poker_hands["Royal Flush"] = "monarchy :("
         G.localization.misc.poker_hands['Straight Flush'] = "gay fucking mess"
         G.localization.misc.poker_hands["Flush House"] = "flush toilet"
         G.localization.misc.poker_hands.Flush = "always plays flush"
         G.localization.misc.poker_hands['Straight'] = "gay"
-        G.localization.misc.poker_hands["Full House"] = "in the full house like carpet"
+        G.localization.misc.poker_hands["Full House"] = "full house like carpet"
         G.localization.misc.poker_hands["Five of a Kind"] = "cheating"
         G.localization.misc.poker_hands["Four of a Kind"] = "tetris"
         G.localization.misc.poker_hands["Three of a Kind"] = ":3c of a kind"
@@ -103,6 +107,13 @@ function SMODS.INIT.sylvie_text_mod()
 
     -- modify deck names / descriptions
     if G and G.localization and G.localization.descriptions and G.localization.descriptions.Back then
+        G.localization.descriptions.Back.b_black.text = {
+            "{C:attention}+#1#{} Joker slot",
+            "",
+            "{C:blue}-#2#{} hand",
+            "every round",
+            "if you like {C:red}losing{}"
+        }
         G.localization.descriptions.Back.b_abandoned.text = {
             "i have {C:attention}social{}",
             "{C:attention}anxiety{} :(",
@@ -188,6 +199,17 @@ function SMODS.INIT.sylvie_text_mod()
             "add {C:attention}#1#{} random {C:attention}Enhanced",
             "{C:attention}Asexuals{} to your hand",
         }
+
+        G.localization.descriptions.Voucher.v_grabber.text = {
+            "Permanently",
+            "gain {C:blue}+#1#{} hand",
+            "per round",
+            "{C:inactive,s:0.8}the grabberrrr{}"
+        }
+
+
+        G.localization.descriptions.Joker.j_hanging_chad.name = "Hanging Chat"
+        G.localization.descriptions.Joker.j_ride_the_bus.name = "Dublin Bus"
 
         G.localization.descriptions.Blind.bl_fish.name = "The Fishie"
         G.localization.descriptions.Blind.bl_mouth.name = "The Mouthwashing"
